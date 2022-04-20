@@ -14,18 +14,19 @@ type Article struct {
 	Author  string `json:"author"`
 }
 
-// don't know the idea behind it
+// need to learn more about syntax
 type Repo struct {
 	Articles []Article
 }
 
-// don't know the idea behind it
+// need to learn more about syntax
 func New() *Repo {
 	return &Repo{
 		Articles: []Article{},
 	}
 }
 
+// need to learn more about syntax
 func (r *Repo) Add(a Article) {
 	r.Articles = append(r.Articles, a)
 }

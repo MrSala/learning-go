@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 )
 
-// don't understand yet fully
+// need to learn more about syntax
 func RequestBody(body interface{}) io.ReadCloser {
 	b, _ := json.Marshal(body)
 	return ioutil.NopCloser(bytes.NewReader(b))
