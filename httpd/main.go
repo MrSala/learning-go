@@ -12,11 +12,6 @@ import (
 func main() {
 	port := ":3000"
 	feed := articles.New()
-	feed.Add(articles.Article{
-		Title:   "Learning Go",
-		Summary: "Learning Go to be able to work in ispec and won't become a neck",
-		Author:  "Martin",
-	})
 
 	r := chi.NewRouter()
 
